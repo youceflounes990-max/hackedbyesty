@@ -1,0 +1,579 @@
+<!DOCTYPE html>
+<html lang="ar">
+<head:
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no">
+    <title>HACKED BY JA7EEM | SYSTEM BREACH</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            background-color: #000000;
+            color: #00ff41;
+            font-family: 'Courier New', 'Fira Code', monospace;
+            line-height: 1.7;
+            padding: 20px;
+            overflow-x: hidden;
+            position: relative;
+            min-height: 100vh;
+        }
+
+        body::before {
+            content: "";
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background: repeating-linear-gradient(
+                0deg,
+                rgba(0, 255, 65, 0.08),
+                rgba(0, 255, 65, 0.08) 2px,
+                transparent 2px,
+                transparent 4px
+            );
+            pointer-events: none;
+            z-index: 2;
+        }
+
+        @keyframes flicker {
+            0% { opacity: 0.97; }
+            5% { opacity: 0.92; }
+            10% { opacity: 0.98; }
+            15% { opacity: 0.88; }
+            100% { opacity: 1; }
+        }
+
+        body {
+            animation: flicker 0.25s infinite;
+        }
+
+        .container {
+            max-width: 880px;
+            margin: 60px auto;
+            border: 1.5px solid #00ff41;
+            padding: 28px 24px;
+            background-color: rgba(0, 0, 0, 0.85);
+            box-shadow: 0 0 28px rgba(0, 255, 65, 0.4), inset 0 0 10px rgba(0, 255, 65, 0.2);
+            position: relative;
+            backdrop-filter: blur(1px);
+            transition: all 0.2s ease;
+            border-radius: 12px;
+        }
+
+        .header {
+            text-align: center;
+            margin-bottom: 30px;
+            padding-bottom: 20px;
+            border-bottom: 2px solid #00ff41;
+            position: relative;
+        }
+
+        .header::after {
+            content: "⚡";
+            position: absolute;
+            bottom: -12px;
+            left: 50%;
+            transform: translateX(-50%);
+            background: #000;
+            padding: 0 12px;
+            color: #00ff41;
+            font-size: 1.4rem;
+            text-shadow: 0 0 6px #0f0;
+        }
+
+        h1 {
+            font-size: 3.2rem;
+            text-transform: uppercase;
+            letter-spacing: 6px;
+            margin-bottom: 12px;
+            text-shadow: 0 0 8px #00ff41, 0 0 18px #00aa2a;
+            animation: glitch 3s infinite alternate, glowPulse 1.8s ease-in-out infinite alternate;
+            word-break: break-word;
+        }
+
+        @keyframes glitch {
+            0% { text-shadow: -2px 0 #ff00c1, 2px 0 #00fff9; }
+            25% { text-shadow: 2px 0 #ff00c1, -2px 0 #00fff9; }
+            50% { text-shadow: -1px 0 #ff00c1, 1px 0 #00fff9; }
+            75% { text-shadow: 1px 0 #ff00c1, -1px 0 #00fff9; }
+            100% { text-shadow: 0 0 12px #00ff41, 0 0 20px #00aa2a; }
+        }
+
+        @keyframes glowPulse {
+            from { text-shadow: 0 0 5px #0f0; }
+            to { text-shadow: 0 0 22px #0f0, 0 0 35px #0a0; }
+        }
+
+        .credentials {
+            margin: 24px 0;
+            padding: 18px 20px;
+            border: 1px solid #2aff6e;
+            background-color: rgba(0, 30, 0, 0.55);
+            font-size: 1.25rem;
+            font-weight: bold;
+            letter-spacing: 1px;
+            border-radius: 8px;
+            box-shadow: inset 0 0 12px rgba(0,255,0,0.2), 0 0 8px rgba(0,255,0,0.3);
+            backdrop-filter: blur(2px);
+            font-family: monospace;
+            word-break: break-word;
+        }
+
+        .message {
+            margin: 32px 0;
+            padding: 18px 20px;
+            border-right: 4px solid #00ff41;
+            border-left: 1px dashed #2eff6e;
+            background: rgba(0, 20, 0, 0.4);
+            border-radius: 10px;
+            transition: 0.2s;
+        }
+
+        .message p {
+            margin-bottom: 14px;
+            text-align: justify;
+            font-size: 1.08rem;
+            line-height: 1.6;
+        }
+
+        .message p:first-child {
+            font-size: 1.4rem;
+            font-weight: bold;
+            color: #6eff8e;
+            letter-spacing: 1px;
+        }
+
+        .discord-link {
+            display: inline-block;
+            background: #1a2a1f;
+            padding: 5px 12px;
+            border-radius: 30px;
+            color: #00ffaa;
+            text-decoration: none;
+            font-weight: bold;
+            border: 1px solid #3eff6e;
+            transition: 0.2s;
+            margin-top: 6px;
+            letter-spacing: 1px;
+        }
+
+        .discord-link:hover {
+            background: #00aa33;
+            color: black;
+            box-shadow: 0 0 12px #00ff41;
+            text-shadow: none;
+        }
+
+        .signature {
+            text-align: right;
+            margin-top: 35px;
+            padding-top: 18px;
+            border-top: 2px solid #00ff41;
+            font-weight: bold;
+            font-size: 1.15rem;
+            letter-spacing: 1px;
+            text-shadow: 0 0 4px #0f0;
+        }
+
+        .footer {
+            text-align: center;
+            margin-top: 45px;
+            font-size: 0.85rem;
+            color: #1eff6e;
+            border-top: 1px dotted #3eff6e;
+            padding-top: 15px;
+            opacity: 0.8;
+        }
+
+        .cursor {
+            display: inline-block;
+            width: 12px;
+            height: 1.2em;
+            background-color: #00ff41;
+            animation: blink 0.9s step-end infinite;
+            vertical-align: middle;
+            margin-left: 8px;
+            box-shadow: 0 0 6px #0f0;
+        }
+
+        @keyframes blink {
+            0%, 100% { opacity: 1; }
+            50% { opacity: 0; }
+        }
+
+        .scan-line {
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 4px;
+            background: linear-gradient(90deg, transparent, #00ff41, #2eff8e, #00ff41, transparent);
+            animation: scanMove 4.5s cubic-bezier(0.4, 0.0, 0.2, 1) infinite;
+            z-index: 999;
+            pointer-events: none;
+            opacity: 0.7;
+            filter: blur(1px);
+        }
+
+        @keyframes scanMove {
+            0% { top: 0%; opacity: 0.4; }
+            50% { top: 95%; opacity: 1; }
+            100% { top: 0%; opacity: 0.4; }
+        }
+
+        .hacked-text {
+            position: fixed;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%) rotate(-25deg);
+            font-size: 10vw;
+            font-weight: 900;
+            color: rgba(0, 255, 65, 0.07);
+            z-index: -1;
+            text-transform: uppercase;
+            white-space: nowrap;
+            user-select: none;
+            letter-spacing: 20px;
+            pointer-events: none;
+            font-family: monospace;
+            text-shadow: 0 0 25px #0f0;
+        }
+
+        .matrix-bg {
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            pointer-events: none;
+            z-index: -2;
+            opacity: 0.2;
+            font-family: monospace;
+            font-size: 1rem;
+            color: #2eff6e;
+        }
+
+        .error-flash {
+            animation: errorFlash 0.18s 2;
+        }
+
+        @keyframes errorFlash {
+            0%, 100% { background-color: transparent; }
+            50% { background-color: rgba(255, 30, 0, 0.25); box-shadow: inset 0 0 60px red; }
+        }
+
+        @keyframes shakeOnce {
+            0% { transform: translate(0, 0); }
+            25% { transform: translate(2px, -2px); }
+            50% { transform: translate(-2px, 1px); }
+            75% { transform: translate(1px, -1px); }
+            100% { transform: translate(0, 0); }
+        }
+        .glitch-box {
+            animation: shakeOnce 0.35s ease-in-out;
+        }
+
+        @media (max-width: 720px) {
+            h1 {
+                font-size: 2.2rem;
+                letter-spacing: 3px;
+            }
+            .container {
+                padding: 20px 16px;
+                margin: 30px 15px;
+            }
+            .credentials {
+                font-size: 1rem;
+            }
+            .message p {
+                font-size: 0.95rem;
+            }
+            .hacked-text {
+                font-size: 14vw;
+                letter-spacing: 8px;
+            }
+        }
+
+        .cyber-tag {
+            position: fixed;
+            bottom: 15px;
+            left: 15px;
+            font-size: 0.7rem;
+            background: rgba(0,0,0,0.6);
+            padding: 5px 10px;
+            border-left: 3px solid #0f0;
+            color: #4eff6e;
+            z-index: 99;
+            font-family: monospace;
+            border-radius: 0 8px 8px 0;
+            pointer-events: none;
+        }
+    </style>
+</head>
+<body>
+    <div class="scan-line"></div>
+    <div class="hacked-text">// HACKED //</div>
+    <div class="cyber-tag">#JA7EEM | ROOT ACCESS</div>
+
+    <div class="container" id="mainContainer">
+        <div class="header">
+            <h1>HACKED BY JA7EEM</h1>
+        </div>
+
+        <div class="credentials" id="typeWriterTarget">
+        </div>
+
+        <div class="message">
+            <p>✧ JA7EEM : ✧</p>
+            <p>good luck</p>
+            <p>2 🚨</p>
+            <p>3 🔥</p>
+            <p>⭐ <a href="#" id="discordFakeLink" class="discord-link">discord.gg/mMcKAvDeJM</a> ⭐</p>
+            <p style="font-size:0.9rem; opacity:0.9;"># النظام تحت السيطرة الكاملة #</p>
+        </div>
+
+        <div class="signature">
+            ⚡ --- ⚡<br>
+            OPTICALY BLACKSHOWER - SANNUITISME<br>
+            🇵🇸 🇩🇿 🕸️
+        </div>
+
+        <div class="footer">
+            [ System compromised • Access logged • T0R routed ]
+        </div>
+    </div>
+
+    <audio id="hackedAudio" loop>
+        <source src="aa.mp3" type="audio/mpeg">
+        متصفحك لا يدعم الصوت، ولكن الهجوم مستمر.
+    </audio>
+
+
+    <canvas id="matrixCanvas" class="matrix-bg" style="position: fixed; top:0; left:0; width:100%; height:100%; pointer-events: none; z-index:-1; opacity:0.2;"></canvas>
+
+    <script>
+        (function() {
+          
+            const credentialsContainer = document.getElementById('typeWriterTarget');
+            const originalCredsHTML = `discord@es<br>
+fuck@system-5 why?<span class="cursor"></span>`;
+
+            credentialsContainer.innerHTML = '';
+            let idx = 0;
+            const rawText = "discord@es\nfuck@system-5 why?";
+            const lines = rawText.split('\n');
+            let currentLine = 0;
+            let charPos = 0;
+            let finalHTML = '';
+            
+            function typeNextChar() {
+                if (currentLine < lines.length) {
+                    let lineContent = lines[currentLine];
+                    if (charPos < lineContent.length) {
+                        finalHTML += lineContent.charAt(charPos);
+                        charPos++;
+                 // لاتسرقققققققققققققققققققققققققققققققققققققققق
+                        let displayHTML = '';
+                        for(let i=0; i<=currentLine; i++) {
+                            if(i === currentLine) {
+                                displayHTML += finalHTML;
+                                if(i !== lines.length-1 || charPos < lineContent.length) displayHTML += '<span class="cursor"></span>';
+                            } else {
+                                displayHTML += lines[i] + '<br>';
+                            }
+                        }
+                        credentialsContainer.innerHTML = displayHTML;
+                        setTimeout(typeNextChar, 45);
+                    } else {
+                        finalHTML = '';
+                        currentLine++;
+                        charPos = 0;
+                        if(currentLine < lines.length) {
+                            credentialsContainer.innerHTML += '<br>';
+                            setTimeout(typeNextChar, 60);
+                        } else {
+                               // لاتسرقققققققققققققققققققققققققققققققققققققققق
+                            let fullDisplay = '';
+                            for(let i=0; i<lines.length; i++) {
+                                fullDisplay += lines[i] + (i===lines.length-1 ? '<span class="cursor"></span>' : '<br>');
+                            }
+                            credentialsContainer.innerHTML = fullDisplay;
+                        }
+                    }
+                }
+            }
+            typeNextChar();
+            
+   
+            setInterval(() => {
+                if (Math.random() > 0.82) {
+                    document.body.classList.add('error-flash');
+                    setTimeout(() => {
+                        document.body.classList.remove('error-flash');
+                    }, 400);
+                }        // لاتسرقققققققققققققققققققققققققققققققققققققققق
+            }, 2700);
+            
+
+            const containerDiv = document.querySelector('.container');
+            if(containerDiv) {
+                containerDiv.classList.add('glitch-box');
+                setTimeout(() => {
+                    containerDiv.classList.remove('glitch-box');
+                }, 500);
+            }
+                    // لاتسرقققققققققققققققققققققققققققققققققققققققق
+         
+            const audioEl = document.getElementById('hackedAudio');
+         
+            const attemptAutoPlay = () => {
+                audioEl.play().then(() => {
+                    console.log("Audio playing");
+                }).catch(e => {
+                    console.log("Auto-play blocked, waiting for user interaction");
+         
+                    const onceInteraction = () => {
+                        audioEl.play().catch(err=>console.warn);
+                        document.removeEventListener('click', onceInteraction);
+                        document.removeEventListener('keydown', onceInteraction);
+                    };
+                    document.addEventListener('click', onceInteraction);
+                    document.addEventListener('keydown', onceInteraction);
+                });
+            };
+            attemptAutoPlay();
+            
+
+            const discordLink = document.getElementById('discordFakeLink');
+            if(discordLink) {
+                discordLink.addEventListener('click', (e) => {
+                    e.preventDefault();
+
+                    document.body.style.transition = "0.1s";
+                    document.body.style.backgroundColor = "#0a2f0a";
+                    setTimeout(() => document.body.style.backgroundColor = "", 180);
+                    window.open('https://discord.gg/mMcKAvDeJM', '_blank');
+                });
+            }
+                    // لاتسرقققققققققققققققققققققققققققققققققققققققق
+
+            const canvas = document.getElementById('matrixCanvas');
+            if(canvas) {
+                canvas.width = window.innerWidth;
+                canvas.height = window.innerHeight;
+                const ctx = canvas.getContext('2d');
+                const chars = "01アイウエオカキクケコABCDEFGHIJKLMNOPQRSTUVWXYZ@#$%&<>/\\|[]{}~";
+                const fontSize = 18;
+                let columns = Math.floor(canvas.width / fontSize);
+                let drops = [];
+                for(let i=0; i<columns; i++) drops[i] = Math.floor(Math.random() * -canvas.height / fontSize);
+                        // لاتسرقققققققققققققققققققققققققققققققققققققققق
+                function drawMatrix() {
+                    if(!canvas || !ctx) return;
+                    ctx.fillStyle = "rgba(0, 0, 0, 0.05)";
+                    ctx.fillRect(0, 0, canvas.width, canvas.height);
+                    ctx.fillStyle = "#0f0";
+                    ctx.font = fontSize + "px monospace";
+                    for(let i=0; i<drops.length; i++) {
+                        const text = chars[Math.floor(Math.random() * chars.length)];
+                        const x = i * fontSize;
+                        const y = drops[i] * fontSize;
+                        if(y < canvas.height && y > 0) {
+                            ctx.fillStyle = "#2eff7a";
+                            ctx.fillText(text, x, y);
+                        }
+                        if(y > canvas.height && Math.random() > 0.975) drops[i] = 0;
+                        drops[i]++;
+                    }
+                    requestAnimationFrame(drawMatrix);
+                }
+                drawMatrix();
+                
+                window.addEventListener('resize', () => {
+                    canvas.width = window.innerWidth;
+                    canvas.height = window.innerHeight;
+                    columns = Math.floor(canvas.width / fontSize);
+                    drops = [];
+                    for(let i=0; i<columns; i++) drops[i] = Math.floor(Math.random() * -canvas.height / fontSize);
+                });
+            }
+                    // لاتسرقققققققققققققققققققققققققققققققققققققققق
+  
+            const headers = document.querySelectorAll('h1');
+            setInterval(() => {
+                if(Math.random() > 0.85) {
+                    const glitchSpan = document.createElement('style');
+                    glitchSpan.textContent = `h1 { animation: glitch 0.2s infinite, glowPulse 1s infinite; }`;
+                    document.head.appendChild(glitchSpan);
+                    setTimeout(() => glitchSpan.remove(), 150);
+                }
+            }, 4000);
+   
+            const scan = document.querySelector('.scan-line');
+            if(scan) {
+                setInterval(() => {
+                    scan.style.opacity = "0.9";
+                    setTimeout(() => { if(scan) scan.style.opacity = "0.6"; }, 200);
+                }, 2000);
+            }
+            
+            const footerSpan = document.createElement('span');
+            footerSpan.style.display = 'block';
+            footerSpan.style.marginTop = '8px';
+            footerSpan.style.fontSize = '0.7rem';
+            const now = new Date();
+            footerSpan.innerHTML = `⚡ ATTACK TIMESTAMP: ${now.toLocaleString()} ⚡`;
+            document.querySelector('.footer').appendChild(footerSpan);
+            
+            // 11. تأثير كتابة متقدم في الرسالة – حركة خفيفة عند مرور الماوس
+            const msgDiv = document.querySelector('.message');
+            if(msgDiv) {
+                msgDiv.addEventListener('mouseenter', () => {
+                    msgDiv.style.borderRightColor = "#aaffaa";
+                    msgDiv.style.boxShadow = "0 0 14px #0f0";
+                });
+                msgDiv.addEventListener('mouseleave', () => {
+                    msgDiv.style.borderRightColor = "#00ff41";
+                    msgDiv.style.boxShadow = "none";
+                });
+            }
+                    // لاتسرقققققققققققققققققققققققققققققققققققققققق
+            document.body.addEventListener('click', (e) => {
+                if(Math.random() > 0.7) {
+                    console.log("%c⚠️ SYSTEM HIJACKED BY JA7EEM ⚠️", "color: #0f0; font-size: 16px; font-weight: bold;");
+                    console.log("%c[ROOT] Access Granted | Discord: mMcKAvDeJM", "color: #5eff8e");
+                }
+            });
+            
+            const topBar = document.createElement('div');
+            topBar.style.position = 'fixed';
+            topBar.style.top = '0';
+            topBar.style.left = '0';
+            topBar.style.width = '100%';
+            topBar.style.backgroundColor = '#0a0a0a';
+            topBar.style.color = '#2eff6e';
+            topBar.style.fontSize = '11px';
+            topBar.style.textAlign = 'center';
+            topBar.style.padding = '3px';
+            topBar.style.zIndex = '10000';
+            topBar.style.fontFamily = 'monospace';
+            topBar.style.borderBottom = '1px solid #0f0';
+            topBar.innerHTML = '🔒 HACKED ZONE • ALL DATA ENCRYPTED • JA7EEM TEAM 🔒';
+            document.body.appendChild(topBar);
+            
+            setTimeout(() => {
+                if(credentialsContainer.innerHTML.length < 20) {
+                    credentialsContainer.innerHTML = 'discord@es<br>fuck@system-5 why?<span class="cursor"></span>';
+                }
+            }, 2000);
+        })();
+        // لاتسرقققققققققققققققققققققققققققققققققققققققق
+    </script>
+</body>
+</html>
+
